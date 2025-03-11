@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on sidebar width */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: margin-left 0.3s ease;
+    overflow: auto; /* Ensures content is scrollable */
+}
+
+/* Heading Styles */
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Card Deck Styles */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-deck .card {
+    flex: 1 1 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card-deck .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 20px;
+}
+
+.card-body .card-title {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+
+.card-body .card-text {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Card Colors */
+.card:nth-child(1) .card-header {
+    background-color: #007bff; /* Blue */
+}
+
+.card:nth-child(2) .card-header {
+    background-color: #28a745; /* Green */
+}
+
+.card:nth-child(3) .card-header {
+    background-color: #ffc107; /* Yellow */
+}
+
+.card:nth-child(4) .card-header {
+    background-color: #dc3545; /* Red */
+}
+
+.card:nth-child(5) .card-header {
+    background-color: #17a2b8; /* Teal */
+}
+
+.card:nth-child(6) .card-header {
+    background-color: #6c757d; /* Gray */
+}
+
+.card:nth-child(7) .card-header {
+    background-color: #e83e8c; /* Pink */
+}
+
+.card:nth-child(8) .card-header {
+    background-color: #fd7e14; /* Orange */
+}
+
+.card:nth-child(9) .card-header {
+    background-color: #20c997; /* Light Green */
+}
+
+.card:nth-child(10) .card-header {
+    background-color: #6610f2; /* Purple */
+}
+
+/* Table Styles */
+.table {
+    margin-bottom: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table .btn-sm {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .card-deck .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .card-deck .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 250px); /* Adjust based on sidebar width */
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}

@@ -1,0 +1,136 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main content */
+.main-content {
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    max-height: calc(100vh - 40px); /* Adjust height as needed */
+}
+
+/* Headers */
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Table container */
+.table-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allow horizontal scrolling if the table is too wide */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 80vh; /* Adjust as needed */
+    overflow-y: auto; /* Allow vertical scrolling in the popup */
+}
+
+.popup button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#popup-close {
+    background-color: #6c757d;
+}
+
+/* Status message */
+#status-message {
+    margin-top: 10px;
+    color: red;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* General button styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Delete button specific styles */
+button.delete-btn {
+    background-color: #dc3545; /* Red background for delete */
+    color: #fff; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+button.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+button.delete-btn:active {
+    background-color: #bd2130; /* Even darker red when clicked */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+/* Optional: Disabled state */
+button.delete-btn:disabled {
+    background-color: #e0a800; /* Grey background for disabled */
+    color: #6c757d; /* Grey text */
+    cursor: not-allowed;
+}

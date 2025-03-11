@@ -1,0 +1,116 @@
+/* logout.css */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: url('../img/bg2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 0; /* Background overlay behind modal */
+}
+
+.modal-dialog {
+    max-width: 600px; /* Larger form */
+    margin: auto;
+    position: relative; /* Ensures modal stays on top of the overlay */
+    z-index: 2; /* Higher z-index to be in front of the overlay */
+}
+
+.modal-content {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.5s ease-out;
+    border: none; /* Removed borders */
+    z-index: 3; /* Ensures content is on top */
+    padding: 0; /* Removed padding to fit header with body */
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    background-color: #0056b3;
+    color: #ffffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 1.5rem 1.5rem; /* Increased padding for header text */
+    margin: 0; /* Remove margin */
+    text-align: center;
+    border: none; /* Removed borders */
+}
+
+.modal-header .modal-title {
+    font-weight: 600;
+    font-size: 2rem; /* Resized to match the larger form */
+    margin: 0 auto; /* Center the title horizontally */
+}
+
+.modal-body {
+    font-size: 1.1rem; /* Slightly larger text for better readability */
+    color: #e9ecef;
+    padding: 2rem 3rem; /* More padding for better spacing */
+    text-align: center;
+    margin: 0; /* Remove margin */
+}
+
+.modal-footer {
+    padding: 1.5rem 3rem; /* Increased horizontal padding */
+    display: flex;
+    justify-content: space-between;
+    border: none; /* Removed borders */
+}
+
+.modal-footer .btn {
+    padding: 0.75rem 1.75rem;
+    font-size: 1.1rem; /* Larger buttons */
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 120px; /* Larger min-width for buttons */
+    border: none; /* Removed borders */
+    margin: 0 10px; /* Added margin between buttons */
+}
+
+.modal-footer .btn-secondary {
+    background-color: #28a745; /* Green color for "No" button */
+    color: #fff;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.modal-footer .btn-primary {
+    background-color: #dc3545; /* Red color for "Yes" button */
+    color: #fff;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}

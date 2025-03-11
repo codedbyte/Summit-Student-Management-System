@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 350px; /* Reduced the width */
+    margin: 30px auto;
+    padding: 15px; /* Reduced padding */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Header Styling */
+h1 {
+    font-size: 20px; /* Reduced font size */
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+label {
+    font-weight: 500;
+    font-size: 13px; /* Reduced font size */
+    color: #34495e;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Fields Styling */
+.form-control {
+    width: 100%;
+    padding: 6px 1px; /* Reduced padding */
+    font-size: 14px; /* Slightly reduced font size */
+    border-radius: 6px;
+    border: 1px solid #dfe6e9;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.3); /* Smaller shadow */
+}
+
+/* Button Styling */
+.btn-primary {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    background-color: #2471a3;
+    transform: translateY(1px);
+}
+
+/* Message Styling */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px; /* Reduced font size */
+    text-align: center;
+}
+
+.message.alert-success {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.message.alert-danger {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 350px) {
+    .container {
+        padding: 10px; /* Further reduced padding */
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        font-size: 12px; /* Further reduced font size */
+    }
+}

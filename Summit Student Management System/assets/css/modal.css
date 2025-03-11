@@ -1,0 +1,160 @@
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1050; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable vertical scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    backdrop-filter: blur(5px); /* Optional: blur the background */
+    animation: fadeIn 0.4s; /* Fade-in animation */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 900px; /* Maximum width for larger screens */
+    border-radius: 8px;
+    position: relative;
+    animation: slideIn 0.4s; /* Slide-in animation */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Scrollable Table Container */
+.table-container {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-x: auto; /* Horizontal scroll */
+    overflow-y: auto; /* Vertical scroll */
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Table Styling */
+.report-table {
+    width: 100%;
+    min-width: 800px; /* Ensure table is wider than container */
+    border-collapse: collapse;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+.report-table th, .report-table td {
+    padding: 8px 12px; /* Smaller padding */
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.report-table th {
+    background-color: #004e97;
+    color: white;
+}
+
+.report-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+/* styles.css */
+
+/* Style for the table */
+.table {
+    margin: 0 auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Style for the buttons */
+.btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none; /* Remove text decoration */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-view {
+    background-color: #28a745; /* Green for View Report */
+    color: #fff;
+}
+
+.btn-view:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-download {
+    background-color: #dc3545; /* Red for Download Report */
+    color: #fff;
+}
+
+.btn-download:hover {
+    background-color: #c82333; /* Darker red on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sm {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* Add some spacing around the table */
+.card-body {
+    padding: 20px;
+}

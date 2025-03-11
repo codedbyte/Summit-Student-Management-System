@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 8px; /* Reduced margin */
+    font-size: 1.2rem; /* Maintained font size */
+}
+
+/* Form Container */
+form {
+    background-color: #ffffff;
+    padding: 16px; /* Increased padding */
+    margin: 16px auto; /* Increased margin */
+    border-radius: 6px; /* Slightly reduced border-radius */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Maintained shadow */
+    max-width: 600px; /* Increased max-width */
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px; /* Increased margin to match padding */
+}
+
+.form-group {
+    flex: 1 1 48%; /* Maintain two-column layout */
+    padding: 0 8px; /* Increased padding */
+    box-sizing: border-box;
+}
+
+/* Form Element Styles */
+label {
+    font-weight: bold;
+    color: #555;
+    font-size: 0.8rem; /* Maintained font size */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 6px; /* Maintained padding */
+    margin: 2px 0 12px 0; /* Maintained margin */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Maintained border-radius */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-size: 0.8rem; /* Maintained font size */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 2px rgba(0, 123, 255, 0.5); /* Maintained shadow */
+}
+
+/* Full-width elements */
+.form-group.full-width {
+    flex: 1 1 100%; /* Full width for some elements */
+}
+
+/* Buttons */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px; /* Maintained padding */
+    border: none;
+    border-radius: 4px; /* Maintained border-radius */
+    cursor: pointer;
+    font-size: 0.8rem; /* Maintained font size */
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex: 1 1 100%;
+    }
+
+    h2 {
+        font-size: 1.1rem; /* Further reduced font size for small screens */
+        margin-bottom: 6px; /* Further reduced margin */
+    }
+
+    button[type="submit"] {
+        font-size: 0.75rem; /* Further reduced font size */
+    }
+}
+
+@media (max-width: 576px) {
+    form {
+        padding: 12px; /* Slightly increased padding for small screens */
+        margin: 4px auto; /* Maintained margin */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea,
+    select {
+        font-size: 0.75rem; /* Maintained font size */
+        padding: 5px; /* Maintained padding */
+    }
+
+    button[type="submit"] {
+        padding: 4px 8px; /* Maintained padding */
+        font-size: 0.7rem; /* Maintained font size */
+    }
+}
+
+/* Accessibility Enhancements */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #007bff;
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="date"]:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Form Sections */
+form .mb-3 {
+    margin-bottom: 1rem; /* Maintained margin-bottom */
+}
+
+/* Styling Textareas */
+textarea {
+    resize: vertical;
+    min-height: 60px; /* Maintained minimum height */
+}
+
+/* Form Headers */
+h2 {
+    font-size: 1.2rem; /* Maintained font size */
+    margin-bottom: 8px; /* Maintained margin-bottom */
+    color: #333;
+}

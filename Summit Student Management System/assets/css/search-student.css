@@ -1,0 +1,383 @@
+/* Main content padding */
+.main-content {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+/* Style the search form */
+#search-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Center the form header */
+#search-form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form labels */
+#search-form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Input fields */
+#search-form input[type="text"],
+#search-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input fields hover & focus state */
+#search-form input[type="text"]:focus,
+#search-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Input group styling */
+.input-group {
+    position: relative;
+}
+
+.input-group-text {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+}
+
+#search-query {
+    padding-right: 40px; /* Space for the icon */
+}
+
+/* Ensure search input matches other input lengths */
+#search-query,
+#search-form input[type="text"],
+#search-form select {
+    width: calc(100% - 40px); /* Adjust width to match the standard input length */
+}
+
+/* Submit button */
+#search-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover */
+#search-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Form fieldset spacing */
+#search-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Placeholder color */
+#search-query::placeholder {
+    color: #999;
+}
+
+/* Custom styles for select dropdowns */
+#search-form select.form-select {
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #495057;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    #search-form {
+        padding: 20px;
+    }
+
+    #search-query,
+    #search-form input[type="text"],
+    #search-form select {
+        width: 100%;
+    }
+
+    #search-query {
+        padding-right: 35px;
+    }
+}
+/* Existing CSS from before */
+
+/* Styles for the results section */
+#results {
+    margin-top: 30px;
+}
+
+.result {
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.result p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.no-results {
+    padding: 15px;
+    background-color: #f8d7da;
+    border-radius: 8px;
+    color: #721c24;
+    text-align: center;
+    font-weight: bold;
+}
+/* Existing CSS from before */
+
+/* Style the search button with icon */
+#search-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-form button[type="submit"] i {
+    margin-right: 8px;
+}
+
+/* Submit button hover */
+#search-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the results section */
+#results {
+    margin-top: 30px;
+}
+
+.result {
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.result p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.no-results {
+    padding: 15px;
+    background-color: #f8d7da;
+    border-radius: 8px;
+    color: #721c24;
+    text-align: center;
+    font-weight: bold;
+}
+/* Main content padding */
+.main-content {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+/* Style the search form */
+#search-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the form content */
+}
+
+/* Center the form header */
+#search-form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form labels */
+#search-form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left; /* Ensure labels are aligned to the left */
+}
+
+/* Input fields */
+#search-form input[type="text"],
+#search-form select {
+    width: calc(100% - 35px); /* Adjust width to match the standard input length */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input fields hover & focus state */
+#search-form input[type="text"]:focus,
+#search-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Input group styling */
+.input-group {
+    position: relative;
+}
+
+.input-group-text {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+}
+
+#search-query {
+    padding-right: 35px; /* Space for the icon */
+}
+
+/* Submit button */
+#search-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover */
+#search-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Form fieldset spacing */
+#search-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Placeholder color */
+#search-query::placeholder {
+    color: #999;
+}
+
+/* Custom styles for select element */
+#search-form select {
+    appearance: none;
+    background: #ffffff url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KPHBhdGggZD0iTTAgMjAsMTAgMjAsMEwwIDAsMjAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtY29sb3I9IiMwMDcwMDciIHN0cm9rZS1kYXRhLWFuZC1hbGlnbm1lbnQ9InN0YXJ0IiBzdHJva2UtbGluZWpvaW4tYWxpZ249ImNlbnRlciIgc3Ryb2tlLWxpbmUtd2lkdGg9IjAiIHN0cm9rZS1saW5lam9pbj0ibm9uZSIvPjwvc3ZnPg==') no-repeat right center;
+    background-size: 20px;
+}
+/* Container for search results */
+#results {
+    margin-top: 20px;
+}
+
+/* Table styling */
+#results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#results th, #results td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+#results th {
+    background-color: #007bff;
+    color: white;
+}
+
+#results tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#results tr:hover {
+    background-color: #e9ecef;
+}
+
+/* No results message */
+.no-results {
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Success message (if needed) */
+.success-message {
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}

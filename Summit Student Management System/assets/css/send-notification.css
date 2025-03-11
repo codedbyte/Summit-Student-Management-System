@@ -1,0 +1,419 @@
+/* Container for Form and Notification List */
+.notification-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Space between form and notifications */
+}
+
+/* Notification Form Styling */
+#notification-form {
+    background: #f1f5f9; /* Soft light grey background for the form */
+    padding: 30px; /* Increased padding for form */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    flex: 1; /* Take up equal space with the notifications list */
+    max-width: 450px; /* Slightly wider form */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+/* Form Label Styling */
+#notification-form .form-label {
+    font-size: 16px; /* Consistent font size */
+    font-weight: 600; /* Bolder text */
+    color: #333; /* Darker color for labels */
+    margin-bottom: 8px; /* Space between label and input */
+    display: block; /* Ensure labels are block-level */
+}
+
+/* Input Fields Styling */
+#notification-form .form-control {
+    background-color: #fff; /* White background */
+    border: 2px solid #d1d5db; /* Slightly darker grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Slightly increased padding */
+    font-size: 14px; /* Consistent font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full width of form container */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Focus State for Input Fields */
+#notification-form .form-control:focus {
+    border-color: #0056b3; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.2); /* Blue shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Textarea Specific Styling */
+#notification-form textarea.form-control {
+    resize: vertical; /* Vertical resizing only */
+    min-height: 100px; /* Minimum height */
+}
+
+/* Button Styling */
+#notification-form .btn-primary {
+    background-color: #0056b3; /* Primary blue background */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    font-size: 14px; /* Consistent font size */
+    font-weight: 600; /* Slightly bolder text */
+    color: #fff; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    display: inline-flex; /* Inline flexbox */
+    align-items: center; /* Center text and icon vertically */
+}
+
+/* Hover State for Button */
+#notification-form .btn-primary:hover {
+    background-color: #004080; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Button Icon Styling */
+#notification-form .btn-primary i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Status Message Styling */
+#status-message {
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Consistent font size */
+    margin-top: 20px; /* Space above the status message */
+    padding: 10px; /* Padding around message */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Success Message */
+#status-message.status-success {
+    background-color: #28a745; /* Green background for success */
+    color: #ffffff; /* White text */
+}
+
+/* Error Message */
+#status-message.status-error {
+    background-color: #dc3545; /* Red background for error */
+    color: #ffffff; /* White text */
+}
+
+/* Notifications List Container */
+.notifications-list-container {
+    flex: 1; /* Take up equal space with the form */
+    background: #ffffff; /* White background */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 450px; /* Restrict width */
+    overflow-y: auto; /* Scrollable if content exceeds container height */
+}
+
+/* Notification Item Styling */
+#notifications-list .notification-item {
+    background-color: #e9ecef; /* Light grey background */
+    border-left: 5px solid #17a2b8; /* Blue border for visual distinction */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    margin-bottom: 10px; /* Space between notifications */
+    position: relative; /* For any additional elements */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Notification Item Colored Border Variants */
+#notifications-list .notification-item.urgent {
+    border-left-color: #dc3545; /* Red border for urgent notifications */
+}
+
+#notifications-list .notification-item.normal {
+    border-left-color: #17a2b8; /* Default blue border */
+}
+
+#notifications-list .notification-item.low-priority {
+    border-left-color: #ffc107; /* Yellow border for low priority */
+}
+
+/* Hover Effect for Notification Item */
+#notifications-list .notification-item:hover {
+    background-color: #d4d9df; /* Darker grey on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Notification Title */
+#notifications-list .notification-item h5 {
+    font-size: 16px; /* Consistent font size */
+    color: #333; /* Darker text */
+    margin: 0 0 5px 0; /* Margin around title */
+}
+
+/* Notification Date Styling */
+#notifications-list .notification-item p.date {
+    font-size: 14px; /* Smaller font size for date */
+    color: #6c757d; /* Muted color for date */
+    margin: 0; /* No margin */
+    font-style: italic; /* Italic style for date */
+    text-align: right; /* Align to the right */
+    margin-top: 5px; /* Space above date */
+}
+
+/* Notification Description */
+#notifications-list .notification-item p.description {
+    font-size: 14px; /* Consistent font size */
+    color: #555; /* Darker text for description */
+    margin-top: 5px; /* Space above description */
+}
+/* General styles for the form */
+#notification-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Status message styling */
+#status-message .alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Notification list container */
+#notifications-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+
+/* Individual notification item */
+.notification-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Color variations */
+.notification-item:nth-child(odd) {
+    background-color: #e3f2fd; /* Light Blue */
+}
+
+.notification-item:nth-child(even) {
+    background-color: #fce4ec; /* Light Pink */
+}
+
+/* Date styling */
+.notification-item .date {
+    font-size: 12px;
+    color: #757575;
+    margin-top: 5px;
+}
+/* General styles for the form */
+#notification-form {
+    background-color: #f9f9f9;
+    padding: 25px; /* Slightly increased padding */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ensures form stays within container */
+    overflow: hidden;
+}
+
+/* Form input styles */
+#notification-form input,
+#notification-form textarea {
+    width: 100%; /* Ensures inputs fit within the container */
+    box-sizing: border-box; /* Adjusts for padding and borders */
+}
+
+/* Status message styling */
+#status-message .alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Notification list container */
+#notifications-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+
+/* Thin and camouflaged scrollbar */
+#notifications-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#notifications-list::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Light grey to blend in */
+    border-radius: 3px;
+}
+
+#notifications-list::-webkit-scrollbar-track {
+    background-color: #f9f9f9; /* Matches the form background */
+}
+
+/* Individual notification item */
+.notification-item {
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Color variations */
+.notification-item:nth-child(odd) {
+    background-color: #e0f7fa; /* Light Cyan */
+}
+
+.notification-item:nth-child(even) {
+    background-color: #ffe0b2; /* Light Orange */
+}
+
+/* Date styling */
+.notification-item .date {
+    font-size: 12px;
+    color: #757575;
+    margin-top: 5px;
+    font-style: italic;
+}
+/* General styles for the form */
+#notification-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    overflow: hidden;
+}
+
+/* Form input styles */
+#notification-form input,
+#notification-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Status message styling */
+#status-message .alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Notification list container */
+#notifications-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+
+/* Thin and camouflaged scrollbar */
+#notifications-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#notifications-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+#notifications-list::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+}
+
+/* Individual notification item */
+.notification-item {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+
+/* Random attractive RGB color patterns for notifications */
+.notification-item:nth-child(1) {
+    background-color: rgb(85, 139, 47); /* Vibrant green */
+}
+
+.notification-item:nth-child(2) {
+    background-color: rgb(244, 67, 54); /* Vibrant red */
+}
+
+.notification-item:nth-child(3) {
+    background-color: rgb(33, 150, 243); /* Bright blue */
+}
+
+.notification-item:nth-child(4) {
+    background-color: rgb(255, 193, 7); /* Bright yellow */
+}
+
+.notification-item:nth-child(5) {
+    background-color: rgb(76, 175, 80); /* Green */
+}
+
+.notification-item:nth-child(6) {
+    background-color: rgb(255, 87, 34); /* Deep orange */
+}
+
+.notification-item:nth-child(7) {
+    background-color: rgb(103, 58, 183); /* Deep purple */
+}
+
+.notification-item:nth-child(8) {
+    background-color: rgb(0, 188, 212); /* Cyan */
+}
+
+/* Date styling */
+.notification-item .date {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8); /* Slightly faded white */
+    margin-top: 5px;
+    font-style: italic;
+}
+/* Ensure the form header is on top of the form */
+.notification-form-container {
+    width: 100%;
+    max-width: 450px; /* Optional: Adjust width as needed */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-form-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#notifications-list {
+    padding: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: auto;
+    width: 85%;
+}
+.notifications-list-container{
+    margin-top: -70px;
+}
+.notifications-list-container h4{
+    text-align: center;
+}
+#notifications-list .alert {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.notification-item {
+    width: 80%;
+}
